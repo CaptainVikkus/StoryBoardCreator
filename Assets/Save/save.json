@@ -1,0 +1,29 @@
+{
+Scenario 0
+	{
+	Introduction
+	sequential
+		{
+			{"type":5,"title":"Introduction Text","description":"Initial information given to User","trigger":"Application begins","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"","message":""}
+			{"type":5,"title":"Please Remember","description":"Message reminder before scenario begins","trigger":"Introduction Text finished displaying","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"","message":"Please remember...\n\nFor the sake of simplicity, not all system components within this scenario are interactive, and some have been created with minimal detail.\n\nFull training from an accredited organisation should be completed alongside this scenario."}
+		}
+	TaskList 1
+	sequential
+		{
+			{"type":0,"title":"Task Title","description":"","trigger":"","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":""}
+			{"type":0,"title":"Task Title 1","description":"","trigger":"","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":""}
+		}
+	Ending
+	sequential
+		{
+			{"type":5,"title":"Completed Scenario","description":"Message appears with \"Yes\" \"No\"","trigger":"Last task has been completed by user​","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"","message":"You have now completed this scenario. Are you ready to see your results now?\r"}
+		}
+	Feedback
+	sequential
+		{
+			{"type":5,"title":"Feedback","description":"Summary window is displayed with feedback for the learner.","trigger":"User ended scenario and selects to see feedback, triggers 3.02","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"","message":"You have now completed this scenario. Are you ready to see your results now?\r"}
+			{"type":5,"title":"More Information","description":"More Information window is displayed","trigger":"triggers 3.03","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"","message":""}
+			{"type":5,"title":"Score Breakdown","description":"A summary of the tasks carried out by the user\r","trigger":"","scored":false,"feedback":{"correctMessage":"","incorrectMessage":"","partialcorrectMessage":""},"optionalDetails":"Back/Next Button as well as a Download Button to download a PDF","message":"Select the tasks to see more detail.\nScoring: [ / ] 10 Points   [ X ] 0 Points\n\n+ Task 1 Name   [ / ] or [X ] \n+ Etc"}
+		}
+	}
+}
